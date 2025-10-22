@@ -114,7 +114,7 @@ public class Person {
         return Objects.hash(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address);
     }
     public void displayInfo(){
-        System.out.println("id= " + id +
+        System.out.println("display info:\nid= " + id +
                 ", firstName= " + firstName +
                 ", lastName= " + lastName +
                 ", dateOfBirth= " + dateOfBirth +
