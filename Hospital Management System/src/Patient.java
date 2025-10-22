@@ -16,6 +16,70 @@ public class Patient extends Person{
         super(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address);
     }
 
+    public String getBloodGroup() {
+        return bloodGroup;
+    }
+
+    public void setBloodGroup(String bloodGroup) {
+        this.bloodGroup = bloodGroup;
+    }
+
+    public String getPatentId() {
+        return patentId;
+    }
+
+    public void setPatentId(String patentId) {
+        this.patentId = patentId;
+    }
+
+    public String getEmergencyContact() {
+        return emergencyContact;
+    }
+
+    public void setEmergencyContact(String emergencyContact) {
+        this.emergencyContact = emergencyContact;
+    }
+
+    public List<String> getAllergies() {
+        return allergies;
+    }
+
+    public void setAllergies(List<String> allergies) {
+        this.allergies = allergies;
+    }
+
+    public LocalDate getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(LocalDate registrationDate) {
+        this.registrationDate = registrationDate;
+    }
+
+    public List<String> getMedicalRecords() {
+        return medicalRecords;
+    }
+
+    public void setMedicalRecords(List<String> medicalRecords) {
+        this.medicalRecords = medicalRecords;
+    }
+
+    public String getInsuranceId() {
+        return insuranceId;
+    }
+
+    public void setInsuranceId(String insuranceId) {
+        this.insuranceId = insuranceId;
+    }
+
+    public List<String> getAppointments() {
+        return appointments;
+    }
+
+    public void setAppointments(List<String> appointments) {
+        this.appointments = appointments;
+    }
+
     @Override
     public void displayInfo() {
         super.displayInfo();
