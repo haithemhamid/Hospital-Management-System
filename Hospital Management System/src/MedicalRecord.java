@@ -91,16 +91,18 @@ public class MedicalRecord {
 
                 '}';
     }
-    public void displayInfo(){
+
+    public void displayInfo() {
         System.out.println(
-                "recordId= " + recordId  +
+                "recordId= " + recordId +
                         ", patientId= " + patientId +
-                        ", doctorId= " + doctorId  +
+                        ", doctorId= " + doctorId +
                         ", visitDate= " + visitDate +
                         ", diagnosis= " + diagnosis +
                         ", prescription= " + prescription +
-                        ", testResults= " + testResults  +
+                        ", testResults= " + testResults +
                         ", notes=" + notes
         );
     }
+
 }

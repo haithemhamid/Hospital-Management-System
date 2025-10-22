@@ -11,7 +11,7 @@ public class Person {
     private String email;
     private String address;
 
-    public Person(String id, String firstName, String lastName, LocalDate dateOfBirth, String gender, String phoneNumber, String email,String address) {
+    public Person(String id, String firstName, String lastName, LocalDate dateOfBirth, String gender, String phoneNumber, String email, String address) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -19,9 +19,8 @@ public class Person {
         this.gender = gender;
         this.phoneNumber = phoneNumber;
         this.email = email;
-        this.address=address;
+        this.address = address;
     }
-
 
 
     public String getId() {
@@ -113,15 +112,16 @@ public class Person {
     public int hashCode() {
         return Objects.hash(id);
     }
-    public void displayInfo(){
+
+    public void displayInfo() {
         System.out.println("display info:\nid= " + id +
                 ", firstName= " + firstName +
                 ", lastName= " + lastName +
                 ", dateOfBirth= " + dateOfBirth +
-                ", gender= " + gender  +
+                ", gender= " + gender +
                 ", phoneNumber= " + phoneNumber +
-                ", email= " + email  +
-                ", address= " + address  );
+                ", email= " + email +
+                ", address= " + address);
     }
 
 }

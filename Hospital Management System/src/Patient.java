@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
-public class Patient extends Person{
+public class Patient extends Person {
     private String patentId;
     private String bloodGroup;
     private List<String> allergies;
@@ -11,7 +11,8 @@ public class Patient extends Person{
     private String insuranceId;
     private List<String> medicalRecords;
     private List<String> appointments;
-    static Scanner sc=new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+
     public Patient(String id, String firstName, String lastName, LocalDate dateOfBirth, String gender, String phoneNumber, String email, String address) {
         super(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address);
     }
@@ -92,17 +93,20 @@ public class Patient extends Person{
                 ", medicalRecords= " + medicalRecords +
                 ", appointments= " + appointments);
     }
-    public void addMedicalRecord(){
+
+    public void addMedicalRecord() {
         System.out.println("please enter the medical record to insert it in list: ");
         medicalRecords.add(sc.nextLine());
     }
-    public void addAppointment(){
+
+    public void addAppointment() {
         System.out.println("please enter the appointment to insert it in the list: ");
         medicalRecords.add(sc.nextLine());
     }
-    public void updateInsurance(){
+
+    public void updateInsurance() {
         System.out.println("please enter the new insurance to update it: ");
-        insuranceId=sc.nextLine();
+        insuranceId = sc.nextLine();
     }
 
 }

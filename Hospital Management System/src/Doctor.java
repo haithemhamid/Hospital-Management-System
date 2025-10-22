@@ -11,7 +11,7 @@ public class Doctor extends Person{
     private Double consultationFee;
     private List<String> availableSlots;
     private List<Patient> assignedPatients;
-    static Scanner sc=new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
     public Doctor(String id, String firstName, String lastName, LocalDate dateOfBirth, String gender, String phoneNumber, String email, String address) {
         super(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address);
     }

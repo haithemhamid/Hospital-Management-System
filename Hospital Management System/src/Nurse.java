@@ -2,13 +2,14 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
-public class Nurse extends Person{
+public class Nurse extends Person {
     private String nurseId;
     private String departmentId;
     private Shift shift;
     private String qualification;
     private List<Patient> assignedPatients;
-    static Scanner sc=new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+
     public Nurse(String id, String firstName, String lastName, LocalDate dateOfBirth, String gender, String phoneNumber, String email, String address) {
         super(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address);
     }
@@ -57,14 +58,14 @@ public class Nurse extends Person{
     public void displayInfo() {
         super.displayInfo();
         System.out.println("nurseId= " + nurseId +
-                ", departmentId= " + departmentId  +
+                ", departmentId= " + departmentId +
                 ", shift= " + shift +
-                ", qualification= " + qualification  +
-                ", assignedPatients= " + assignedPatients );
+                ", qualification= " + qualification +
+                ", assignedPatients= " + assignedPatients);
     }
 
-    public void assignPatient(){
+    public void assignPatient() {
         System.out.println("please enter the patient to insert it in list: ");
-        int patientId=sc.nextInt();
+        int patientId = sc.nextInt();
     }
 }
