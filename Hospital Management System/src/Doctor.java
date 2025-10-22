@@ -17,6 +17,69 @@ public class Doctor extends Person{
     }
 
 
+    public String getDoctorId() {
+        return doctorId;
+    }
+
+    public void setDoctorId(String doctorId) {
+        this.doctorId = doctorId;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public Integer getExperienceYears() {
+        return experienceYears;
+    }
+
+    public void setExperienceYears(Integer experienceYears) {
+        this.experienceYears = experienceYears;
+    }
+
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(String departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    public Double getConsultationFee() {
+        return consultationFee;
+    }
+
+    public void setConsultationFee(Double consultationFee) {
+        this.consultationFee = consultationFee;
+    }
+
+    public List<String> getAvailableSlots() {
+        return availableSlots;
+    }
+
+    public void setAvailableSlots(List<String> availableSlots) {
+        this.availableSlots = availableSlots;
+    }
+
+    public List<Patient> getAssignedPatients() {
+        return assignedPatients;
+    }
+
+    public void setAssignedPatients(List<Patient> assignedPatients) {
+        this.assignedPatients = assignedPatients;
+    }
 
     @Override
     public void displayInfo(){
@@ -34,6 +97,8 @@ public class Doctor extends Person{
     }
     public void assignPatient(){
         System.out.println("please enter the patient to insert it in list: ");
+        int patientId=sc.nextInt();
+
 
     }
     public void removePatient(){
