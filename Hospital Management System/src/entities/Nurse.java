@@ -1,7 +1,9 @@
+package entities;
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
-
+import entities.*;
 public class Nurse extends Person {
     private String nurseId;
     private String departmentId;
